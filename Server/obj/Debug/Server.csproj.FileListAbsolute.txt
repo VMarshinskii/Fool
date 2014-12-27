@@ -1,0 +1,6 @@
+c:\users\вячеслав\documents\visual studio 2013\Projects\Fool\Server\bin\Debug\Server.exe.config
+c:\users\вячеслав\documents\visual studio 2013\Projects\Fool\Server\bin\Debug\Server.exe
+c:\users\вячеслав\documents\visual studio 2013\Projects\Fool\Server\bin\Debug\Server.pdb
+c:\users\вячеслав\documents\visual studio 2013\Projects\Fool\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+c:\users\вячеслав\documents\visual studio 2013\Projects\Fool\Server\obj\Debug\Server.exe
+c:\users\вячеслав\documents\visual studio 2013\Projects\Fool\Server\obj\Debug\Server.pdb

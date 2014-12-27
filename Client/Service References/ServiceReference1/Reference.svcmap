@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="14d797b2-3750-4baa-8cf2-e949290a3fe2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/Server/FoolService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="9b162fa8-517f-468b-973b-38e98b1cc473" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Server/FoolService/?xsd=xsd2" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="8519d3a7-3b56-44b1-b665-72e65b93586d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Server/FoolService/?xsd=xsd1" />
+    <MetadataFile FileName="FoolService.wsdl" MetadataType="Wsdl" ID="b07a8ba5-a446-4980-a988-912e0c609188" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Server/FoolService/?wsdl" />
+    <MetadataFile FileName="item21.xsd" MetadataType="Schema" ID="2383277e-9d4f-4c49-ba78-32af0d9f2ce4" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Server/FoolService/?xsd=xsd3" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="886b3974-a1f4-45fe-b521-10a19d033971" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Server/FoolService/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="7113a7a1-e764-4fdc-9908-3d509da594a2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Server/FoolService/?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

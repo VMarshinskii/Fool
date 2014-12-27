@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FoolService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Server/FoolService/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Server/FoolService/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Server/FoolService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Server" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Server/FoolService/?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFoolService_Registration_InputMessage">
+    <wsdl:part name="parameters" element="tns:Registration" />
+  </wsdl:message>
+  <wsdl:message name="IFoolService_Registration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFoolService_GetCardsOnTable_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardsOnTable" />
+  </wsdl:message>
+  <wsdl:message name="IFoolService_GetCardsOnTable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardsOnTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFoolService_GetAllUsersOnTable_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsersOnTable" />
+  </wsdl:message>
+  <wsdl:message name="IFoolService_GetAllUsersOnTable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsersOnTableResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IFoolService">
+    <wsdl:operation name="Registration">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFoolService/Registration" message="tns:IFoolService_Registration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFoolService/RegistrationResponse" message="tns:IFoolService_Registration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCardsOnTable">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFoolService/GetCardsOnTable" message="tns:IFoolService_GetCardsOnTable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFoolService/GetCardsOnTableResponse" message="tns:IFoolService_GetCardsOnTable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsersOnTable">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFoolService/GetAllUsersOnTable" message="tns:IFoolService_GetAllUsersOnTable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFoolService/GetAllUsersOnTableResponse" message="tns:IFoolService_GetAllUsersOnTable_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IFoolService" type="tns:IFoolService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Registration">
+      <soap:operation soapAction="http://tempuri.org/IFoolService/Registration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCardsOnTable">
+      <soap:operation soapAction="http://tempuri.org/IFoolService/GetCardsOnTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsersOnTable">
+      <soap:operation soapAction="http://tempuri.org/IFoolService/GetAllUsersOnTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FoolService">
+    <wsdl:port name="BasicHttpBinding_IFoolService" binding="tns:BasicHttpBinding_IFoolService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Server/FoolService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
