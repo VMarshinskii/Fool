@@ -1,8 +1,42 @@
 ﻿<Window x:Class="Client.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Дурак" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Rectangle Stroke="Black" Grid.RowSpan="3" Grid.ColumnSpan="3">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="img/507-green.jpg" TileMode="FlipXY" ViewportUnits="Absolute" Viewport="0 0 37 37"></ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Viewbox Margin="10" Grid.Row="2" Grid.Column="1">
+            <StackPanel Name="stpCardsMain" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" AllowDrop="True" Focusable="True"/>
+        </Viewbox>
+        <Viewbox Margin="10,40,10,61" Grid.Row="1" Grid.Column="1">
+            <StackPanel x:Name="stpCardsIn" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" AllowDrop="True" Focusable="True"/>
+        </Viewbox>
+        <Viewbox Margin="10,76,10,25" Grid.Row="1" Grid.Column="1">
+            <StackPanel x:Name="stpCardsOut" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" AllowDrop="True" Focusable="True"/>
+        </Viewbox>
+        <Viewbox x:Name="vbxLeftUser" Margin="10" Grid.Row="1"/>
+        <Viewbox x:Name="vbxLeftTopUser" Margin="10"/>
+        <Viewbox x:Name="vbxTopUser" Margin="10" Grid.Column="1"/>
+        <Viewbox x:Name="vbxRightTopUser" Margin="10" Grid.Column="2"/>
+        <Viewbox x:Name="vbxRightUser" Margin="10" Grid.Row="1" Grid.Column="2"/>
+        <Viewbox x:Name="vbxMyUser" Margin="10" Grid.Row="2">
+            <StackPanel Height="100" Width="100">
+                <Label x:Name="lblMyName" />
+                <Label x:Name="lblMyStatus" />
+            </StackPanel>
+        </Viewbox>
     </Grid>
 </Window>
